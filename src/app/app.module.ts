@@ -10,11 +10,16 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule, MatList} from '@angular/material/list'; 
+import { MatButtonModule } from '@angular/material/button';
+import { WeatherComponent } from './weather/weather.component';
+import { TodolistComponent } from './todolist/todolist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    routingComponents
+    routingComponents,
+    WeatherComponent,
+    TodolistComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +29,8 @@ import {MatListModule, MatList} from '@angular/material/list';
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
